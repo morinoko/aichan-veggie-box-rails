@@ -1,3 +1,9 @@
 ja:
   site_title: "あいちゃんのVeggie Box"
   copyright: "© あいちゃんのVeggie Box 2019"
+  menu:
+    farm: "畑のこと"
+    veggies: "野菜"
+    order: "注文したい！"
+    blog: "ブログ"
+    language: "English"
