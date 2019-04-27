@@ -39,4 +39,19 @@ en:
     blog: "Blog"
     language: "日本語"
   home:
-    intro_html: <p>My farm is in Matsumoto, Nagano! To grow my veggies, I use the soil and native plants in the field, fallen leaves, rye straw, and rice bran–and that’s it! I focus much of time trying to build up the biodiversity and healthy ecosystem of beneficial soil microbes on my farm. In other words, I don’t just grow vegetables, I manage a whole ecosystem of plants, animals (including myself!) and microbes so all the living things can exist together, share resources and support each other. I try my best not to damage the environment or use its limited resources in excess.</p><p>I may have to fight with the rough conditions in Mother Nature at times, but most of the time she helps me out and my vegetables end up with complex and delicious flavors. Even though I can’t produce huge harvests, it’s my hope that I can share at least some of my vegetables with others, so you can get try them for yourself and experience their natural taste. As I continue to farm, I’m constantly making new discoveries, trying to learn as much as can, and always working on moving my dream forward!</p>
+    intro_html: |
+      <p>My farm is in Matsumoto, Nagano! To grow my veggies, I use the soil and native plants in the field, fallen leaves, rye straw, and rice bran–and that’s it! I focus much of time trying to build up the biodiversity and healthy ecosystem of beneficial soil microbes on my farm. In other words, I don’t just grow vegetables, I manage a whole ecosystem of plants, animals (including myself!) and microbes so all the living things can exist together, share resources and support each other. I try my best not to damage the environment or use its limited resources in excess.</p>
+      <p>I may have to fight with the rough conditions in Mother Nature at times, but most of the time she helps me out and my vegetables end up with complex and delicious flavors. Even though I can’t produce huge harvests, it’s my hope that I can share at least some of my vegetables with others, so you can get try them for yourself and experience their natural taste. As I continue to farm, I’m constantly making new discoveries, trying to learn as much as can, and always working on moving my dream forward!</p>
+    farmer_profile_title: "About Farmer Ai"
+    farmer_profile_intro_html: |
+      <p>I was born in 1980 and lived in Kanagawa until I was 36. In the Chinese zodiac, I'm a monkey. In the western zodiac, I'm a Virgo. My hobbies and interests are jogging, eating good food, veggies (of course!), going on drives, movies and music. And, I love to drink! Personality-wise, I'm outgoing and fun ;)</p>
+      <p>Farming and me ↓</p>
+    farmer_profile_history_html: |
+      <ul>
+        <li>Aug 2013 I visited my friend in America and was inspired by her family's garden. After returning to Japan, I started looking for a place I could farm in Fujisawa.</li>
+        <li>Sep 2013 I started signed up at Cotomo Farm Fujisawa where I learned all about natural and organic farming, the carbon cycle and all kinds of microorganisms!</li>
+        <li>Oct 2014 I took Cotomo Farm's advanced farming course and enrolled in seminars about no-fertilizer farming.</li>
+        <li>Nov 2015 I started working part-time at Cotomo Farm as a farm experience adviser and assistant.</li>
+        <li>2016 I started selling vegetables to my friend's cafe and actually helping at the cafe, all the while attending Yoritaka Okamoto's half-year course on natural/no-fertilizer farming. What a crazy year!</li>
+        <li>Aug 2017 I moved to Matsumoto, Nagano, where I live now and run a small farm. I manage my fields with just a hoe, shovel, tabi boots, and manpower!</li>
+      </ul>
