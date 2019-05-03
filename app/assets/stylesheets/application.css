@@ -12,6 +12,7 @@
  *
  *= require normalize
  *= require flexbox
- *= require_tree .
+ *= require main
+ *= require home
  *= require_self
  */

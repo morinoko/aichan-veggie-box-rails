@@ -1,3 +1,40 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Sections */
+section#about,
+section#veggies,
+section#order {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* About */
+#about {
+  background-color: #ffcc52;
+
+  img {
+  	border-radius: .25rem;
+  }
+}
+
+#farmer-profile {
+  background-color: white;
+  padding: 20px;
+  margin-top: 2.6rem;
+
+  img {
+  	border-radius: 50%;
+  }
+}
+
+/* Veggies */
+#veggies {
+  background-color: #cc864b;
+}
+
+/* Order */
+#order {
+	background-color: #7EA75C;
+}
