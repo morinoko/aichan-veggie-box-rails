@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import 'flexbox';
+
 /* Sections */
 section#about,
 section#veggies,
@@ -21,11 +23,29 @@ section#order {
 
 #farmer-profile {
   background-color: white;
-  padding: 20px;
+  border-radius: .25rem;
+  padding: 30px;
   margin-top: 2.6rem;
 
-  img {
-  	border-radius: 50%;
+  #farmer-profile-intro {
+  	@include flexbox;
+  	@include justify-content(space-between);
+
+  	#farmer-profile-intro-image {
+  		@include flex(0 0 25%);
+	  	
+	  	img {
+	  		border-radius: 50%;
+	  	}
+	  }
+
+	  #farmer-profile-intro-content {
+	  	@include flex(0 0 70%);
+
+	  	h3 {
+	  		margin-top: .5em;
+	  	}
+	  }
   }
 }
 
@@ -38,3 +58,40 @@ section#order {
 #order {
 	background-color: #7EA75C;
 }
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+	#farmer-profile-intro-image {
+  	@include flex(0 0 25%);
+  }
+
+  #farmer-profile-intro-content {
+	  @include flex(0 0 70%);
+	}
+}
+
+@media screen and (min-width: 650px) {
+	#farmer-profile-intro {
+		@include flex-direction(row);
+
+		#farmer-profile-intro-image {
+	  	@include flex(0 0 30%);
+	  }
+
+	  #farmer-profile-intro-content {
+		  @include flex(0 0 65%);
+		}
+	}
+}
+
+@media screen and (max-width: 649px) {
+	#farmer-profile-intro {
+		@include flex-direction(column);
+
+		#farmer-profile-intro-image,
+		#farmer-profile-intro-content h3 {
+			text-align: center;
+		}
+	}
+}
+

@@ -3,12 +3,16 @@
 		<%= image_tag "intro-photo.jpg" %>
 		<%= t('home.intro_html') %>
 		<div id="farmer-profile">
-			<div>
-				<%= image_tag "farmer-ai-profile.jpg" %>
+			<div id="farmer-profile-intro">
+				<div id="farmer-profile-intro-image">
+					<%= image_tag "farmer-ai-profile.jpg" %>
+				</div>
+				<div id="farmer-profile-intro-content">
+					<h3><%= t('home.farmer_profile_title') %></h3>
+					<%= t('home.farmer_profile_intro_html') %>
+				</div>
 			</div>
-			<div>
-				<h3><%= t('home.farmer_profile_title') %></h3>
-				<%= t('home.farmer_profile_intro_html') %>
+			<div id="farmer-profile-history">
 				<%= t('home.farmer_profile_history_html') %>
 			</div>
 		</div>
