@@ -60,9 +60,13 @@ h3 {
 header {
 	nav {
 		background: $dark-green;
-		padding: 1rem 0;
 
-		ul {
+		#menu li,
+		#menu-button {
+			padding: 1rem 0;
+		}
+
+		#menu {
 			max-width: 1000px;
 			list-style: none;
 			margin: 0 auto;
@@ -78,6 +82,14 @@ header {
 				color: $base-text-color;
 			}
 		}
+
+		#menu-close {
+			background: $base-text-color;
+
+			a {
+				color: white;
+			}
+		}
 	}
 
 	img {
@@ -91,7 +103,6 @@ header {
 		color: $base-text-color;
 	}
 }
-
 
 /* Footer */
 footer {
@@ -110,8 +121,19 @@ footer {
 @media screen and (max-width: 767px) {
 	header {
 		nav {
-			ul {
+			#menu {
 				display: none;
+				text-align: center;
+
+				li {
+					padding-top: 0.7rem;
+    			padding-bottom: 0.7rem;
+    			border-bottom: white solid 1px;
+
+    			&:last-child {
+    				border-bottom: none;
+    			}
+				}
 			}
 
 			#menu-button {
@@ -127,12 +149,13 @@ footer {
 @media screen and (min-width: 768px) {
 	header {
 		nav {
-			ul {
+			#menu {
 				@include flexbox;
 				@include justify-content(space-around);
 			}
 
-			#menu-button {
+			#menu-button,
+			#menu-close {
 				display: none;
 			}
 		}
