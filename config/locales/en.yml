@@ -38,6 +38,8 @@ en:
     order: "Order"
     blog: "Blog"
     language: "日本語"
+    menu: "Menu"
+    menu_close: "Close"
   home:
     intro_html: |
       <p>My farm is in Matsumoto, Nagano! To grow my veggies, I use the soil and native plants in the field, fallen leaves, rye straw, and rice bran–and that’s it! I focus much of time trying to build up the biodiversity and healthy ecosystem of beneficial soil microbes on my farm. In other words, I don’t just grow vegetables, I manage a whole ecosystem of plants, animals (including myself!) and microbes so all the living things can exist together, share resources and support each other. I try my best not to damage the environment or use its limited resources in excess.</p>
