@@ -1,3 +1,51 @@
 // Place all the styles related to the Orders controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'flexbox';
+
+#order {
+	h2 {
+		color: white;
+		text-align: center;
+	}
+
+	#order-flow {
+		@include flexbox;
+		margin-bottom: 2rem;
+
+		.order-flow-step {
+			@include flex-grow(1);
+			@include flex-basis(0);
+			text-align: center;
+			padding: 0 15px;
+
+			.order-flow-step-number {
+				background: #ffcc52;
+		    font-size: 2rem;
+		    border-radius: 50%;
+		    width: 50px;
+		    height: 50px;
+		    margin: 0 auto 1rem;
+			}
+		}
+	}
+
+	#payment-info {
+		color: #868e96;
+		text-align: center;
+	}
+
+	#form {
+		background: white;
+		padding: 2em;
+		border-radius: .25rem;
+
+		h3 {
+			text-align: center;
+		}
+
+		#form-title {
+			margin: 4rem 0 1.5rem;
+		}
+	}
+}

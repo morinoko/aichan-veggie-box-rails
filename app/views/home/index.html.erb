@@ -22,7 +22,7 @@
 </section>
 <section id="order">
 	<h2><%= t('orders.title') %></h2>
-	<div id="form">
+	<div id="form" class="container">
 		<h3><%= t('orders.flow.heading') %></h3>
 		<div id="order-flow">
 			<div class="order-flow-step">
@@ -44,8 +44,8 @@
 				</div>
 			</div>
 		</div>
-		<p id="payment-info"><%= t('orders.flow.payment_info') %></p>
-		<h3><%= t('orders.form.title') %></h3>
+		<p id="payment-info"><small><%= t('orders.flow.payment_info') %></small></p>
+		<h3 id="form-title"><%= t('orders.form.title') %></h3>
 		<%= render "orders/form" %>
 	</div>
 </section>
