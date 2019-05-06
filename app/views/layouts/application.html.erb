@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AichanVeggieBox</title>
+    <title><%= t('site_title') %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,19 +11,7 @@
 
   <body>
     <header>
-      <nav>
-        <ul id="menu">
-          <li><%= link_to t('menu.farm'), '#about', id: "about-link" %></li>
-          <li><%= link_to t('menu.veggies'), '#veggies', id: "veggies-link" %></li>
-          <li><%= link_to t('menu.order'), '#order', id: "order-link" %></li>
-          <li><%= link_to t('menu.blog'), '#' %></li>
-          <li><%= link_to t('menu.language'), other_locale %></li>
-          <li id="menu-close"><%= link_to t('menu.menu_close'), "#" %></li>
-        </ul>
-        <%= link_to t('menu.menu'), "#", id: "menu-button" %>
-      </nav>
-      <%= image_tag 'kuwa-logo.png', id: "logo" %>
-      <h1><%= t('site_title') %></h1>
+      <%= render 'layouts/header' %>
     </header>
     
     <%= yield %>
