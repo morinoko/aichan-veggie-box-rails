@@ -57,3 +57,22 @@ en:
         <li>2016 I started selling vegetables to my friend's cafe and actually helping at the cafe, all the while attending Yoritaka Okamoto's half-year course on natural/no-fertilizer farming. What a crazy year!</li>
         <li>Aug 2017 I moved to Matsumoto, Nagano, where I live now and run a small farm. I manage my fields with just a hoe, shovel, tabi boots, and manpower!</li>
       </ul>
+  orders:
+    title: "I want to order my own veggie box!"
+    flow:
+      heading: "The Order Process"
+      step_1: "Submit the order form"
+      step_2: "You will receive a confirmation message from me (I work alone so it may take a day or two!)"
+      step_3: "I'll harvest your veggies and send them to you super fresh!"
+      payment_info: "I take payment by Japan Post Office deposit. *First time customers must pay ahead before I prepare your order."
+    form:
+      title: "Order Form"
+      submit: "Send"
+  helpers:
+    label:
+      order:
+        name: "Full Name"
+        email: "Email Address"
+        address: "Address"
+        phone: "Phone Number"
+        message: "Message"

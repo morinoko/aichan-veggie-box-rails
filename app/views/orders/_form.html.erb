@@ -1,0 +1,17 @@
+<%= form_for @order do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+
+	<%= f.label :email %>
+	<%= f.text_field :email %>
+
+	<%= f.label :address %>
+	<%= f.text_field :address %>
+
+	<%= f.label :message %>
+	<%= f.text_area :message %>
+
+	<%= f.submit t('orders.form.submit') %>
+<% end %>
+
+
