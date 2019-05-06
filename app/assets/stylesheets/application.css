@@ -14,5 +14,6 @@
  *= require flexbox
  *= require main
  *= require home
+ *= require orders
  *= require_self
  */
