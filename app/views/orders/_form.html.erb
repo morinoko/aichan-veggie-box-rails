@@ -1,17 +1,21 @@
 <%= form_for @order do |f| %>
-	<%= f.label :name %>
-	<%= f.text_field :name %>
-
-	<%= f.label :email %>
-	<%= f.text_field :email %>
-
-	<%= f.label :address %>
-	<%= f.text_field :address %>
-
-	<%= f.label :message %>
-	<%= f.text_area :message %>
-
-	<%= f.submit t('orders.form.submit') %>
+	<div class="form-group">
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+	</div>
+	<div class="form-group">
+			<%= f.label :email %>
+			<%= f.text_field :email %>
+	</div>
+	<div class="form-group">
+			<%= f.label :address %>
+			<%= f.text_field :address %>
+	</div>
+	<div class="form-group">
+			<%= f.label :message %>
+			<%= f.text_area :message, rows: 10 %>
+	</div>
+	<%= f.submit t('orders.form.submit'), id: "submit" %>
 <% end %>
 
 

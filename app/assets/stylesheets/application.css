@@ -13,6 +13,7 @@
  *= require normalize
  *= require flexbox
  *= require main
+ *= require forms
  *= require home
  *= require orders
  *= require_self

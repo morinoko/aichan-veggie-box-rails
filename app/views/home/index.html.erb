@@ -22,30 +22,32 @@
 </section>
 <section id="order">
 	<h2><%= t('orders.title') %></h2>
-	<div id="form" class="container">
-		<h3><%= t('orders.flow.heading') %></h3>
-		<div id="order-flow">
-			<div class="order-flow-step">
-				<div class="order-flow-step-number">1</div>
-				<div class="order-flow-step-text">
-					<%= t('orders.flow.step_1') %>
+	<div class="container">
+		<div id="form">
+			<h3><%= t('orders.flow.heading') %></h3>
+			<div id="order-flow">
+				<div class="order-flow-step">
+					<div class="order-flow-step-number">1</div>
+					<div class="order-flow-step-text">
+						<%= t('orders.flow.step_1') %>
+					</div>
+				</div>
+				<div class="order-flow-step">
+					<div class="order-flow-step-number">2</div>
+					<div class="order-flow-step-text">
+						<%= t('orders.flow.step_2') %>
+					</div>
+				</div>
+				<div class="order-flow-step">
+					<div class="order-flow-step-number">3</div>
+					<div class="order-flow-step-text">
+						<%= t('orders.flow.step_3') %>
+					</div>
 				</div>
 			</div>
-			<div class="order-flow-step">
-				<div class="order-flow-step-number">2</div>
-				<div class="order-flow-step-text">
-					<%= t('orders.flow.step_2') %>
-				</div>
-			</div>
-			<div class="order-flow-step">
-				<div class="order-flow-step-number">3</div>
-				<div class="order-flow-step-text">
-					<%= t('orders.flow.step_3') %>
-				</div>
-			</div>
+			<p id="payment-info"><small><%= t('orders.flow.payment_info') %></small></p>
+			<h3 id="form-title"><%= t('orders.form.title') %></h3>
+			<%= render "orders/form" %>
 		</div>
-		<p id="payment-info"><small><%= t('orders.flow.payment_info') %></small></p>
-		<h3 id="form-title"><%= t('orders.form.title') %></h3>
-		<%= render "orders/form" %>
 	</div>
 </section>
