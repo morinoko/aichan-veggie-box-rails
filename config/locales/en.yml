@@ -76,3 +76,8 @@ en:
         address: "Address"
         phone: "Phone Number"
         message: "Message"
+    placeholder:
+      order:
+        address: "Please include zip code."
+        message: "Let me know if you have a preference for delivery date or time. I'll try my best to make it happen! Feel free to send me any messages of encouragement too :P"
+

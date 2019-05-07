@@ -46,3 +46,7 @@ ja:
         address: "ご住所"
         phone: "電話番号"
         message: "メッセージ"
+    placeholder:
+      order:
+        address: "郵便番号も書いてください。"
+        message: "ご希望に沿えるか分かりませんが、希望日時などがあれば教えてください。応援メッセージも受け付けております（笑）"
