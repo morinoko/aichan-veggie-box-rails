@@ -58,14 +58,18 @@ input[type="submit"] {
   }
 }
 
-.field_with_errors input {
-  border-color: red;
+#error_explanation {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  border-radius: .25rem;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
 }
 
-.invalid-feedback {
-  display: block;
-  width: 100%;
-  margin-top: .25rem;
-  font-size: 80%;
-  color: #dc3545;
+.field_with_errors {
+  input,
+  textarea {
+  border-color: red;
+  }
 }

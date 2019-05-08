@@ -1,0 +1,10 @@
+<% if @order.errors.any? %>
+	<div id="error_explanation">
+		<h4><%= t('orders.form.error_title') %></h4>
+		<ul>
+			<% @order.errors.full_messages.each do |message| %>
+				<li><%= message %></li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>

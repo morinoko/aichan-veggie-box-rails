@@ -38,6 +38,30 @@ ja:
     form:
       title: "注文フォーム"
       submit: "メッセージを送る"
+      error_title: "あれ？！注文フォームに間違いがあります！間違えたところを正しく入力し直してください。"
+  activerecord:
+    attributes:
+      order:
+        name: "名前"
+        email: "メールアドレス"
+        address: "住所"
+        phone: "電話番号"
+        message: "メッセージ"
+    errors:
+      models:
+        order:
+          attributes:
+            name:
+              blank: "は必須です。"
+            email:
+              blank: "は必須です。"
+              invalid: "が正しくありません。"
+            address:
+              blank: "は必須です。"
+            phone:
+              blank: "は必須です。"
+            message:
+              blank: "は必須です。"
   helpers:
     label:
       order:
