@@ -1,5 +1,5 @@
 <% if @order.errors.any? %>
-	<div id="error_explanation">
+	<div id="error_explanation" class="alert-error">
 		<h4><%= t('orders.form.error_title') %></h4>
 		<ul>
 			<% @order.errors.full_messages.each do |message| %>

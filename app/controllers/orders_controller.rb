@@ -5,6 +5,7 @@ class OrdersController < ApplicationController
 		if @order.save
 			redirect_to root_path
 		else
+			flash[:error] = t('flash.order.error_html')
 			render 'home/index'
 		end
 	end

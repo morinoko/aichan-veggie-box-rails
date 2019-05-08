@@ -8,6 +8,9 @@
 /* colors */
 $base-text-color: #212529;
 $dark-green: #548719;
+$error-text: #721c24;
+$error-background: #f8d7da;
+$error-border: #f5c6cb;
 
 /* General */
 *, ::after, ::before {
@@ -116,6 +119,19 @@ footer {
 		margin: 0;
 		padding-top: 2em;
 	}
+}
+
+/* Alerts, Flash */
+.alert {
+	border-radius: .25rem;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.alert-error {
+	color: $error-text;
+  background-color: $error-background;
+  border-color: $error-border;
 }
 
 /* Responsive */
