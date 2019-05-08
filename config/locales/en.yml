@@ -107,4 +107,5 @@ en:
         message: "Let me know if you have a preference for delivery date or time. I'll try my best to make it happen! Feel free to send me any messages of encouragement too :P"
   flash:
     order:
+      success: "Thank you for your order! I will send you an email about your veggie box soon!"
       error_html: "Your order form had some errors. Please <a href=\"/#order\" class=\"order-link\">check the form</a> and resubmit"

@@ -8,6 +8,9 @@
 /* colors */
 $base-text-color: #212529;
 $dark-green: #548719;
+$sucess-text: #155724;
+$sucess-background: #d4edda;
+$sucess-border: #c3e6cb;
 $error-text: #721c24;
 $error-background: #f8d7da;
 $error-border: #f5c6cb;
@@ -132,6 +135,12 @@ footer {
 	color: $error-text;
   background-color: $error-background;
   border-color: $error-border;
+}
+
+.alert-success {
+	color: $sucess-text;
+  background-color: $sucess-background;
+  border-color: $sucess-border;
 }
 
 /* Responsive */

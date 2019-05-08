@@ -3,9 +3,10 @@ class OrdersController < ApplicationController
 		@order = Order.new(order_params)
 
 		if @order.save
+			flash.now[:success] = t('flash.order.success')
 			redirect_to root_path
 		else
-			flash[:error] = t('flash.order.error_html')
+			flash.now[:error] = t('flash.order.error_html')
 			render 'home/index'
 		end
 	end
