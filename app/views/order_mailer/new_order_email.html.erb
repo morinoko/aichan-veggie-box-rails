@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1><%= @order.name %>さんからメッセージが来ました！</h1>
+    <p>
+    メッセージの内容：<br>
+    --------------------------
+    </p>
+    <p>【お名前】  <%= @order.name %></p>
+    <p>【メールアドレス】  <%= @order.email %></p>
+    <p>【住所】  <%= @order.address %></p>
+    <p>【電話番号】  <%= @order.phone %></p>
+    <p>
+    メッセージ：<br>
+    ----------
+    </p>
+    <p><%= @order.message %></p>
+  </body>
+</html>

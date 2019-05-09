@@ -1,11 +1,7 @@
 class OrderMailer < ApplicationMailer
 	def new_order_email
-		@name = params[:name]
-		@email = params[:email]
-		@address = params[:address]
-		@phone = params[:phone]
-		@message = params[:message]
+		@order = params[:order]
 
-		mail(to: ADMIN_EMAIL, subject: "あいちゃんのベジボックスから新しいメッセージがきました！")
+		mail(to: Rails.application.credentials.admin_email, subject: "あいちゃんのベジボックスから新しいメッセージがきました！")
 	end
 end
