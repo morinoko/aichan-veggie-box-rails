@@ -16,5 +16,6 @@
  *= require forms
  *= require home
  *= require orders
+ *= require sessions
  *= require_self
  */

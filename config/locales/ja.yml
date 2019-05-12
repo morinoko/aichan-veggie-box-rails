@@ -41,8 +41,14 @@ ja:
       title: "注文フォーム"
       submit: "メッセージを送る"
       error_title: "あれ？！注文フォームに間違いがあります！間違えたところを正しく入力し直してください。"
+  sessions:
+    login: "ログイン"
+    logout: "ログアウト"
   activerecord:
     attributes:
+      user:
+        email: "メールアドレス"
+        password: "パスワード"
       order:
         name: "名前"
         email: "メールアドレス"

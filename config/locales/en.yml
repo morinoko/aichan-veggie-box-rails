@@ -71,30 +71,36 @@ en:
       title: "Order Form"
       submit: "Send"
       error_title: "Your order form has some errors. Please fix the errors below and resend the form."
-    activerecord:
-      attributes:
+  sessions:
+    login: "Login"
+    logout: "Logout"
+  activerecord:
+    attributes:
+      user:
+        email: "Email"
+        password: "Password"
+      order:
+        name: "Name"
+        email: "Email"
+        address: "Address"
+        phone: "Phone number"
+        message: "Message"
+    errors:
+      models:
         order:
-          name: "Name"
-          email: "Email"
-          address: "Address"
-          phone: "Phone number"
-          message: "Message"
-      errors:
-        models:
-          order:
-            attributes:
-              one: "Order"
-              name:
-                blank: "must be provided"
-              email:
-                blank: "must be provided"
-                invalid: "is invalid."
-              address:
-                blank: "must be provided"
-              phone:
-                blank: "must be provided"
-              message:
-                blank: "must be provided"
+          attributes:
+            one: "Order"
+            name:
+              blank: "must be provided"
+            email:
+              blank: "must be provided"
+              invalid: "is invalid."
+            address:
+              blank: "must be provided"
+            phone:
+              blank: "must be provided"
+            message:
+              blank: "must be provided"
   helpers:
     label:
       order:

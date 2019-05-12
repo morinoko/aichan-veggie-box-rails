@@ -1,0 +1,21 @@
+<div id="login" class="container narrow">
+  <h1><%= t('sessions.login') %></h1>
+
+  <% if flash[:error] %>
+    <div id="login-error" class="alert-error"><%= flash[:error] %></div>
+  <% end %>
+
+  <%= form_for(:session, url: login_path) do |f| %>
+    <div class="form-group">
+      <%= f.label :email, t('activerecord.attributes.user.email') %>
+      <%= f.email_field :email %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :password, t('activerecord.attributes.user.password') %>
+      <%= f.password_field :password %>
+    </div>
+
+    <%= f.submit t('sessions.login'), id: "submit" %>
+  <% end %> 
+</div>

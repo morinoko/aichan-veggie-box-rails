@@ -41,6 +41,9 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
+.container.narrow {
+	max-width: 550px;
+}
 
 /* Fonts */
 h1, h2, h3, h4, h5, h6 {
