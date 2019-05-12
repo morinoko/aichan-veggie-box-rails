@@ -3,8 +3,9 @@ class OrdersController < ApplicationController
 		@order = Order.new(order_params)
 
 		if @order.save
-			flash.now[:success] = t('flash.order.success')
-			OrderMailer.with(order: @order).new_order_email.deliver_now
+			OrderMailer.with(order: @order).new_order_email.deliver_later
+
+			flash[:success] = t('flash.order.success')
 			redirect_to root_path
 		else
 			flash.now[:error] = t('flash.order.error_html')
