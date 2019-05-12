@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   scope "(:locale)", locale: /en|ja/ do
   	root 'home#index'
   	resources :orders, only: %w{create}
+  	get 'orders', action: :index, controller: :home
   end
 end
