@@ -52,6 +52,34 @@ section#order {
 /* Veggies */
 #veggies {
   background-color: #cc864b;
+
+  h2 {
+  	color: white;
+  }
+
+  #seasonal-veggies {
+  	background: white;
+  	border-radius: .25rem;
+  	padding: 2rem;
+  	@include flexbox;
+  	@include justify-content(space-between);
+
+  	.image {
+  		@include flex(0 0 41%);
+
+  		img {
+  			border-radius: .25rem;
+  		}
+  	}
+
+  	.description {
+  		@include flex(0 0 55%);
+
+  		h3 {
+  			margin-bottom: .5rem;
+  		}
+  	}
+  }
 }
 
 /* Responsive */
@@ -77,6 +105,12 @@ section#order {
 		  @include flex(0 0 65%);
 		}
 	}
+
+	#seasonal-veggies {
+		h3 {
+			margin-top: 0;
+		}
+	}
 }
 
 @media screen and (max-width: 649px) {
@@ -86,6 +120,14 @@ section#order {
 		#farmer-profile-intro-image,
 		#farmer-profile-intro-content h3 {
 			text-align: center;
+		}
+	}
+
+	#seasonal-veggies {
+		@include flex-direction(column);
+
+		h3 {
+			margin-top: .5rem;
 		}
 	}
 }
