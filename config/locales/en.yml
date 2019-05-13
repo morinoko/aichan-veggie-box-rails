@@ -76,6 +76,7 @@ en:
     logout: "Logout"
     success: "Successfully logged in!"
     error: "The email or password was not correct. Please try again."
+    logout_confirmation: "You successfully logged out."
   activerecord:
     attributes:
       user:

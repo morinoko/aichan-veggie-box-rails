@@ -46,6 +46,7 @@ ja:
     logout: "ログアウト"
     success: "ログインしました！"
     error: "メールアドレスかパスワードが正しくありません。もう一度ログインしてみてください。"
+    logout_confirmation: "ログアウトしました。"
   activerecord:
     attributes:
       user:

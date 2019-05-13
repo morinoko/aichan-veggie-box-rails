@@ -1,0 +1,6 @@
+<footer>
+  <p><%= t('copyright') %></p>
+  <% if logged_in? %>
+  	<%= link_to t('sessions.logout'), logout_path, method: :delete, id: "logout" %>
+  <% end %>
+</footer>
