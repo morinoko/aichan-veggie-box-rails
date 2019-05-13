@@ -7,7 +7,8 @@ class SessionsController < ApplicationController
 
   	if user && user.authenticate(params[:session][:password])
   		flash[:success] = t('sessions.success')
-  		# login in and render root
+  		log_in(user)
+  		redirect_to root_path
   	else
   		flash.now[:error] = t('sessions.error')
   		render :new
