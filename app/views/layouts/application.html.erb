@@ -9,8 +9,8 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= render 'layouts/header' %>
+  <body class="<%= controller_name %> <%= action_name %>">
+    <%= render 'layouts/header' unless sessions_page? %>
     
     <% flash.each do |message_type, message| %>
       <div class="container">

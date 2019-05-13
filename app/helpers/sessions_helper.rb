@@ -17,4 +17,8 @@ module SessionsHelper
 		session.delete(:user_id)
 		@current_user = nil
 	end
+
+	def sessions_page?
+		controller_name == "sessions" && (action_name == "new" || action_name = "create")
+	end
 end
