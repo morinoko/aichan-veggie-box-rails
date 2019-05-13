@@ -5,6 +5,12 @@
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,500&subset=japanese');
 @import 'flexbox';
 
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
 /* colors */
 $base-text-color: #212529;
 $dark-green: #548719;
@@ -17,7 +23,7 @@ $error-border: #f5c6cb;
 
 /* General */
 *, ::after, ::before {
-    box-sizing: border-box;
+    @include box_sizing;
 }
 
 body {
@@ -145,6 +151,12 @@ footer {
 	color: $sucess-text;
   background-color: $sucess-background;
   border-color: $sucess-border;
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  padding: 1em 2em;
 }
 
 /* Responsive */
