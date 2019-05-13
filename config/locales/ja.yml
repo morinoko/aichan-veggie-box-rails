@@ -44,6 +44,8 @@ ja:
   sessions:
     login: "ログイン"
     logout: "ログアウト"
+    success: "ログインしました！"
+    error: "メールアドレスかパスワードが正しくありません。もう一度ログインしてみてください。"
   activerecord:
     attributes:
       user:

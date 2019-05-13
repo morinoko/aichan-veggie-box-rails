@@ -74,6 +74,8 @@ en:
   sessions:
     login: "Login"
     logout: "Logout"
+    success: "Successfully logged in!"
+    error: "The email or password was not correct. Please try again."
   activerecord:
     attributes:
       user:
