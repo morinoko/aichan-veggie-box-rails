@@ -10,8 +10,8 @@ class OrderMailerTest < ActionMailer::TestCase
 			email.deliver_now
 		end
 
-		assert_equal ['aichannoveggiebox@gmail.com'], email.from
-		assert_equal ['aichannoveggiebox@gmail.com'], email.to
+		assert_equal [Rails.application.credentials.admin_email], email.from
+		assert_equal [Rails.application.credentials.admin_email], email.to
 		assert_equal "あいちゃんのベジボックスから新しいメッセージがきました！", email.subject
 		assert_match order.name, email.html_part.body.encoded
 		assert_match order.name, email.text_part.body.encoded
