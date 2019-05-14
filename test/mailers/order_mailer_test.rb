@@ -2,9 +2,7 @@ require 'test_helper'
 
 class OrderMailerTest < ActionMailer::TestCase
   test "new order email" do
-    order = Order.new(name: "Joe Smith", email: "joe@gmail.com",
-    									address: "1-2-3 Chuo, Tokyo, 333-0000", phone: "090-7777-8888",
-    									message: "I want to place an order!")
+    order = orders(:one)
 
 		email = OrderMailer.with(order: order).new_order_email
 
@@ -15,5 +13,15 @@ class OrderMailerTest < ActionMailer::TestCase
 		assert_equal ['aichannoveggiebox@gmail.com'], email.from
 		assert_equal ['aichannoveggiebox@gmail.com'], email.to
 		assert_equal "あいちゃんのベジボックスから新しいメッセージがきました！", email.subject
+		assert_match order.name, email.html_part.body.encoded
+		assert_match order.name, email.text_part.body.encoded
+		assert_match order.email, email.html_part.body.encoded
+		assert_match order.email, email.text_part.body.encoded
+		assert_match order.address, email.html_part.body.encoded
+		assert_match order.address, email.text_part.body.encoded
+		assert_match order.phone, email.html_part.body.encoded
+		assert_match order.phone, email.text_part.body.encoded
+		assert_match order.message, email.html_part.body.encoded
+		assert_match order.message, email.text_part.body.encoded
   end
 end
