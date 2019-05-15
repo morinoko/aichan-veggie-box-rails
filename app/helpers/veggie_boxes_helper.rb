@@ -1,0 +1,2 @@
+module VeggieBoxesHelper
+end
