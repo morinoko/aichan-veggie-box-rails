@@ -73,6 +73,12 @@ ja:
               blank: "は必須です。"
             message:
               blank: "は必須です。"
+        veggie_box:
+          attributes:
+            title:
+              blank: "は必須です。"
+            description:
+              blank: "は必須です。"
   helpers:
     label:
       order:

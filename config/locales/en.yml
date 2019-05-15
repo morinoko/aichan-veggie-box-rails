@@ -104,6 +104,12 @@ en:
               blank: "must be provided"
             message:
               blank: "must be provided"
+        veggie_box:
+          attributes:
+            title:
+              blank: "cannot be blank"
+            description:
+              blank: "cannot be blank"
   helpers:
     label:
       order:
