@@ -3,8 +3,7 @@ require 'test_helper'
 class OrderTest < ActiveSupport::TestCase
 
 	def setup
-  	@order = Order.new(name: "Example User", email: "user@example.com", address: "290 Chuo, Tokyo, 000-8888",
-  									 	 phone: "070-9999-000", message: "Please place my order!")
+    @order = orders(:one)
   end
 
   test "should be valid" do
