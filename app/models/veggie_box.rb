@@ -7,7 +7,7 @@ class VeggieBox < ApplicationRecord
 	private
 
 	def only_one
-		if VeggieBox.count >= 1
+		if VeggieBox.count >= 1  && self != VeggieBox.first
 			errors.add :base, 'There can only be one Veggie Box'
 		end
 	end

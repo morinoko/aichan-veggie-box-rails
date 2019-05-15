@@ -3,7 +3,7 @@ require 'test_helper'
 class VeggieBoxTest < ActiveSupport::TestCase
 
 	def setup
-    @box = VeggieBox.new(title: "Box", description: "Lots of veggies!")
+    @box = veggie_boxes(:box_one)
  	end
 
   test "should be valid" do
@@ -21,7 +21,6 @@ class VeggieBoxTest < ActiveSupport::TestCase
   end
 
   test "should not be more than one veggie box" do
-  	@box.save
   	box_2 = VeggieBox.new(title: "Box 2", description: "invalid box")
   	assert_not box_2.valid?
   end
