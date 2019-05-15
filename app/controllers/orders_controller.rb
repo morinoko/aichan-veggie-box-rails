@@ -1,4 +1,6 @@
 class OrdersController < ApplicationController
+	# Form for new order is located on the home page, so there is no `new` action
+
 	def create
 		@order = Order.new(order_params)
 
