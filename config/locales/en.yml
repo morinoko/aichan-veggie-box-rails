@@ -71,7 +71,8 @@ en:
       title: "Order Form"
       submit: "Send"
       error_title: "Your order form has some errors. Please fix the errors below and resend the form."
-  veggie_box:
+  veggie_boxes:
+    edit: "Edit"
     form:
       submit: "Save"
   sessions:

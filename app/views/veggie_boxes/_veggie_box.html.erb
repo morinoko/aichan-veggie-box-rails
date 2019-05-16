@@ -1,0 +1,8 @@
+<div class="image">
+	<%= image_tag(@veggie_box.photo) if @veggie_box.photo.attached? %>
+</div>
+<div class="description">
+	<h3><%= @veggie_box.localized_title %></h3>
+	<p><%= @veggie_box.localized_description %></p>
+	<%= link_to t('veggie_boxes.edit'), edit_veggie_box_path(@veggie_box) if logged_in? %>
+</div>

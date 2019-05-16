@@ -6,6 +6,14 @@ class VeggieBox < ApplicationRecord
 	validate :only_one
 	has_one_attached :photo
 
+	def localized_title
+		self.send("title_#{I18n.locale}")
+	end
+
+	def localized_description
+		self.send("description_#{I18n.locale}")
+	end
+
 	private
 
 	def only_one

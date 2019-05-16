@@ -42,6 +42,7 @@ ja:
       submit: "メッセージを送る"
       error_title: "あれ？！注文フォームに間違いがあります！間違えたところを正しく入力し直してください。"
   veggie_boxes:
+    edit: "編集"
     form:
       submit: "保存する"
   sessions:
