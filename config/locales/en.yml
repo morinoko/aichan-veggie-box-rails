@@ -74,6 +74,7 @@ en:
   veggie_boxes:
     edit: "Edit"
     form:
+      title: "Edit Veggie Box"
       submit: "Save"
   sessions:
     login: "Login"

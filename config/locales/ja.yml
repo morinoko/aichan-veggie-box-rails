@@ -44,6 +44,7 @@ ja:
   veggie_boxes:
     edit: "編集"
     form:
+      title: "野菜ボックスの編集"
       submit: "保存する"
   sessions:
     login: "ログイン"
