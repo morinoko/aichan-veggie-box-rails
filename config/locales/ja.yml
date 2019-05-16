@@ -41,7 +41,9 @@ ja:
       title: "注文フォーム"
       submit: "メッセージを送る"
       error_title: "あれ？！注文フォームに間違いがあります！間違えたところを正しく入力し直してください。"
-  sessions:
+  veggie_boxes:
+    form:
+      submit: "保存する"
     login: "ログイン"
     logout: "ログアウト"
     success: "ログインしました！"

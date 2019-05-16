@@ -1,2 +1,23 @@
-<h1>VeggieBoxes#edit</h1>
-<p>Find me in app/views/veggie_boxes/edit.html.erb</p>
+<h1>Edit Veggie Box</h1>
+<%= form_for @veggie_box do |f| %>
+	<div class="form-group">
+		<%= f.file_field :photo %>
+	</div>
+	<div class="form-group">
+			<%= f.label :title_ja %>
+			<%= f.text_field :title_ja %>
+	</div>
+	<div class="form-group">
+			<%= f.label :description_ja %>
+			<%= f.text_area :description_ja, rows: 10 %>
+	</div>
+	<div class="form-group">
+			<%= f.label :title_en %>
+			<%= f.text_field :title_en %>
+	</div>
+	<div class="form-group">
+			<%= f.label :description_en %>
+			<%= f.text_area :description_en, rows: 10 %>
+	</div>]
+	<%= f.submit t('veggie_boxes.form.submit'), id: "submit" %>
+<% end %>
