@@ -91,6 +91,11 @@ en:
         address: "Address"
         phone: "Phone number"
         message: "Message"
+      veggie_box:
+        title_en: "Title in English"
+        title_ja: "Title in Japanese"
+        description_en: "Description in English"
+        description_ja: "Description in Japanese"
     errors:
       models:
         order:
