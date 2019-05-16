@@ -92,6 +92,7 @@ en:
         phone: "Phone number"
         message: "Message"
       veggie_box:
+        photo: "Photo"
         title_en: "Title in English"
         title_ja: "Title in Japanese"
         description_en: "Description in English"

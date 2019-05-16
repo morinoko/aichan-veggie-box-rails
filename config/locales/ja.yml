@@ -61,6 +61,7 @@ ja:
         phone: "電話番号"
         message: "メッセージ"
       veggie_box:
+        photo: "写真"
         title_en: "英語のタイトル"
         title_ja: "日本語のタイトル"
         description_en: "英語のボックスの内容や説明"
