@@ -11,17 +11,18 @@ class VeggieBoxTest < ActiveSupport::TestCase
   end
 
   test "title should be present" do
-  	@box.title = ""
+  	@box.title_ja = ""
   	assert_not @box.valid?
   end
 
   test "description should be present" do
-  	@box.description = ""
+  	@box.description_en = ""
   	assert_not @box.valid?
   end
 
   test "should not be more than one veggie box" do
-  	box_2 = VeggieBox.new(title: "Box 2", description: "invalid box")
+  	box_2 = VeggieBox.new(title_ja: "Box 2", description_ja: "invalid box",
+                          title_en: "Box 2", description_en: "invalid box")
   	assert_not box_2.valid?
   end
 end
