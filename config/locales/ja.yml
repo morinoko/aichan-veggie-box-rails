@@ -44,6 +44,7 @@ ja:
   veggie_boxes:
     form:
       submit: "保存する"
+  sessions:
     login: "ログイン"
     logout: "ログアウト"
     success: "ログインしました！"
