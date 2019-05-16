@@ -56,8 +56,10 @@ ActiveRecord::Schema.define(version: 2019_05_15_222508) do
   end
 
   create_table "veggie_boxes", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
+    t.string "title_ja"
+    t.string "title_en"
+    t.text "description_ja"
+    t.text "description_en"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
