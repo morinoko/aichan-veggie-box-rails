@@ -79,6 +79,7 @@ en:
   sessions:
     login: "Login"
     logout: "Logout"
+    login_required: "You must be logged in to do that!"
     success: "Successfully logged in!"
     error: "The email or password was not correct. Please try again."
     logout_confirmation: "You successfully logged out."

@@ -1,5 +1,6 @@
 class VeggieBoxesController < ApplicationController
 	before_action :set_veggie_box
+  before_action :require_login
 
   def edit
   end

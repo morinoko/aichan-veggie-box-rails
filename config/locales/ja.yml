@@ -49,6 +49,7 @@ ja:
   sessions:
     login: "ログイン"
     logout: "ログアウト"
+    login_required: "ログインが必要です。"
     success: "ログインしました！"
     error: "メールアドレスかパスワードが正しくありません。もう一度ログインしてみてください。"
     logout_confirmation: "ログアウトしました。"

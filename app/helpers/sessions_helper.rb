@@ -18,6 +18,13 @@ module SessionsHelper
 		@current_user = nil
 	end
 
+	def require_login
+		unless logged_in?
+			flash[:error] = t('sessions.login_required')
+			redirect_to root_path
+		end
+	end
+
 	def sessions_page?
 		controller_name == "sessions" && (action_name == "new" || action_name = "create")
 	end
