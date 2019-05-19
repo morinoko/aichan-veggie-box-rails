@@ -76,7 +76,7 @@ Rails.application.configure do
     :user_name            => Rails.application.credentials.admin_email,
     :password             => Rails.application.credentials.admin_email_password,
     :authentication       => "login",
-    :domain               => 'heroku.com',
+    :domain               => 'aichannoveggiebox.com',
     :enable_starttls_auto => true
   }
 
