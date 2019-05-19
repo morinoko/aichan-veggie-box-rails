@@ -13,8 +13,7 @@ class VeggieBoxesController < ApplicationController
     if @veggie_box.save
       redirect_to root_path
     else
-      flash.now[:error] = "error!"
-      render :new
+      render :new, layout: "admin"
     end
   end
 
@@ -26,8 +25,7 @@ class VeggieBoxesController < ApplicationController
   	if @veggie_box.update(veggie_box_params)
   		redirect_to root_path
   	else
-  		flash.now[:error] = "error!"
-  		render :edit
+  		render :edit, layout: "admin"
   	end
   end
 

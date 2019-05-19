@@ -1,6 +1,9 @@
-<div class="container narrow">
+<div id="veggie-box-form" class="container narrow">
 	<h1><%= t('veggie_boxes.form.title') %></h1>
+
 	<%= form_for @veggie_box do |f| %>
+		<%= render partial: 'shared/error_messages', locals: { current_object: @veggie_box } %>
+
 		<div class="form-group image-group">
 			<%= image_tag(@veggie_box.thumbnail) if @veggie_box.photo.attached? %>
 			<div>

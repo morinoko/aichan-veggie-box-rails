@@ -35,6 +35,7 @@ ja:
     form:
       title: "野菜ボックスの編集"
       submit: "保存する"
+      error_title: "フォームに間違いがあります！"
   orders:
     title: "ベジボックスを注文したい！"
     flow:
