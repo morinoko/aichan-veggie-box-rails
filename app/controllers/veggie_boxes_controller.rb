@@ -3,6 +3,7 @@ class VeggieBoxesController < ApplicationController
   before_action :require_login
 
   def edit
+    render layout: "admin"
   end
 
   def update
