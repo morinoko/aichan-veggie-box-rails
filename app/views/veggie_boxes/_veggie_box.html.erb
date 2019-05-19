@@ -1,5 +1,5 @@
 <div class="image">
-	<%= image_tag(@veggie_box.photo) if @veggie_box.photo.attached? %>
+	<%= image_tag(@veggie_box.photo.variant(resize_to_limit: [555, 555])) if @veggie_box.photo.attached? %>
 </div>
 <div class="description">
 	<h3><%= @veggie_box.localized_title %></h3>
