@@ -6,6 +6,7 @@ class PostTest < ActiveSupport::TestCase
 	end
 
   test "should be valid" do
+  	# doesn't work yet
     assert @post.valid?
   end
 

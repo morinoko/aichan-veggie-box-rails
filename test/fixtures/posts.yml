@@ -2,7 +2,7 @@
 
 one:
   title: "This season's veggies"
-  content: "I've got tomatoes, eggplant, green beans, okra, and more ready for order!"
+  content: rich_texts(:one)
 
 two:
   title: MyString
