@@ -2,7 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.veggie_boxes.edit {
+.veggie_boxes.edit,
+.veggie_boxes.new {
 	h1 {
 		margin-bottom: 1.5em;
 		text-align: center;

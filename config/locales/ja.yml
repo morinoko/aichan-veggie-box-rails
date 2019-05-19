@@ -27,8 +27,14 @@ ja:
         </li>
         <li>2017年8月長野県松本市に移住し、現在に至っております。基本的に、くわ、スコップ、地下足袋でマンパワーで頑張ってます！</li>
       </ul>
-  veggies:
+  veggie_boxes:
     heading: "最近作っているお野菜ちゃん"
+    coming_soon_title: "準備中"
+    coming_soon: "次のベジボックスを準備しています！できましたら、すぐ情報をアップします！"
+    edit: "編集"
+    form:
+      title: "野菜ボックスの編集"
+      submit: "保存する"
   orders:
     title: "ベジボックスを注文したい！"
     flow:
@@ -41,11 +47,6 @@ ja:
       title: "注文フォーム"
       submit: "メッセージを送る"
       error_title: "あれ？！注文フォームに間違いがあります！間違えたところを正しく入力し直してください。"
-  veggie_boxes:
-    edit: "編集"
-    form:
-      title: "野菜ボックスの編集"
-      submit: "保存する"
   sessions:
     login: "ログイン"
     logout: "ログアウト"
@@ -87,9 +88,13 @@ ja:
               blank: "は必須です。"
         veggie_box:
           attributes:
-            title:
+            title_ja:
               blank: "は必須です。"
-            description:
+            description_ja:
+              blank: "は必須です。"
+            title_en:
+              blank: "は必須です。"
+            description_en:
               blank: "は必須です。"
   helpers:
     label:

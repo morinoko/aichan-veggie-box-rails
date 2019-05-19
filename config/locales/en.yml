@@ -57,8 +57,14 @@ en:
         <li>2016 I started selling vegetables to my friend's cafe and actually helping at the cafe, all the while attending Yoritaka Okamoto's half-year course on natural/no-fertilizer farming. What a crazy year!</li>
         <li>Aug 2017 I moved to Matsumoto, Nagano, where I live now and run a small farm. I manage my fields with just a hoe, shovel, tabi boots, and manpower!</li>
       </ul>
-  veggies:
+  veggie_boxes:
     heading: "What's in Season"
+    coming_soon_title: "Coming soon"
+    coming_soon: "I'm currently preparing the next season's veggie box! I'll have information up soon!"
+    edit: "Edit"
+    form:
+      title: "Edit Veggie Box"
+      submit: "Save"
   orders:
     title: "I want to order my own veggie box!"
     flow:
@@ -71,11 +77,6 @@ en:
       title: "Order Form"
       submit: "Send"
       error_title: "Your order form has some errors. Please fix the errors below and resend the form."
-  veggie_boxes:
-    edit: "Edit"
-    form:
-      title: "Edit Veggie Box"
-      submit: "Save"
   sessions:
     login: "Login"
     logout: "Logout"
@@ -118,9 +119,13 @@ en:
               blank: "must be provided"
         veggie_box:
           attributes:
-            title:
+            title_ja:
               blank: "cannot be blank"
-            description:
+            description_ja:
+              blank: "cannot be blank"
+            title_en:
+              blank: "cannot be blank"
+            description_en:
               blank: "cannot be blank"
   helpers:
     label:
