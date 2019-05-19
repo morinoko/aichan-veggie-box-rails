@@ -20,5 +20,6 @@
  *= require orders
  *= require veggie_boxes
  *= require sessions
+ *= require posts
  *= require_self
  */
