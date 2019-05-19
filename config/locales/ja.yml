@@ -48,6 +48,11 @@ ja:
       title: "注文フォーム"
       submit: "メッセージを送る"
       error_title: "あれ？！注文フォームに間違いがあります！間違えたところを正しく入力し直してください。"
+  posts:
+    new:
+      title: "新しいブログ記事"
+    end:
+      title: "ブルグ記事の編集"
   sessions:
     login: "ログイン"
     logout: "ログアウト"

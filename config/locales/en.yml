@@ -78,6 +78,11 @@ en:
       title: "Order Form"
       submit: "Send"
       error_title: "Your order form has some errors. Please fix the errors below and resend the form."
+  posts:
+    new:
+      title: "New Blog Post"
+    end:
+      title: "Edit Blog Post"
   sessions:
     login: "Login"
     logout: "Logout"
