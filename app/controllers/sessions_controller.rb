@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
   		redirect_to root_path
   	else
   		flash.now[:error] = t('sessions.error')
-  		render :new
+  		render :new, layout: "admin"
   	end
   end
 

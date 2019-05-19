@@ -1,4 +1,4 @@
-<div id="post-form" class="container narrow">
+<div id="post-form" class="container">
 	<%= form_for @post do |f| %>
 		<div class="form-group">
 				<%= f.label :title %>
@@ -8,6 +8,6 @@
 				<%= f.label :content %>
 				<%= f.rich_text_area :content %>
 		</div>
-		<%= f.submit %>
+		<%= f.submit id: "submit" %>
 	<% end %>
 </div>
