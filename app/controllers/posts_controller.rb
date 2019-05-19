@@ -1,5 +1,9 @@
 class PostsController < ApplicationController
-	before_action :set_post, only: %w{show edit update}
+	before_action :require_login, except: %w{index show}
+	before_action :set_post, only: %w{show edit update destroy}
+
+	def index
+	end
 
 	def show
 	end
@@ -24,6 +28,9 @@ class PostsController < ApplicationController
 	end
 
 	def update
+	end
+
+	def destroy
 	end
 
 	private
