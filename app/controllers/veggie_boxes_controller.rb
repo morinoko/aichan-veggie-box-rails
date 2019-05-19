@@ -21,6 +21,6 @@ class VeggieBoxesController < ApplicationController
   end
 
   def set_veggie_box
-  	@veggie_box = VeggieBox.first
+  	@veggie_box = VeggieBox.first_or_create
   end
 end

@@ -14,6 +14,10 @@ class VeggieBox < ApplicationRecord
 		self.send("description_#{I18n.locale}")
 	end
 
+	def thumbnail
+		self.photo.variant(resize_to_limit: [100, 100])
+	end
+
 	private
 
 	def only_one
