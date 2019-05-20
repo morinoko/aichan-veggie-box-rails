@@ -48,3 +48,12 @@
 		}
 	}
 }
+
+@media screen and (max-width: 575px) {
+	.posts.index,
+	.posts.show {
+		.container {
+			padding: 50px 15px 100px;
+		}
+	}
+}
