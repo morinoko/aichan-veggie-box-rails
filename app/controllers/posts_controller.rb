@@ -3,6 +3,7 @@ class PostsController < ApplicationController
 	before_action :set_post, only: %w{show edit update destroy}
 
 	def index
+		@posts = Post.all
 	end
 
 	def show
@@ -28,9 +29,16 @@ class PostsController < ApplicationController
 	end
 
 	def update
+		if @post.update(post_params)
+			redirect_to post_path(@post)
+		else
+			render :edit, layout: "admin"
+		end
 	end
 
 	def destroy
+		@post.destroy
+		redirect_to posts_path
 	end
 
 	private
