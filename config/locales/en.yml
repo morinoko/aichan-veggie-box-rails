@@ -33,6 +33,7 @@ en:
   site_title: "Ai-chan’s Veggie Box"
   copyright: "© Ai-chan’s Veggie Box 2019"
   menu:
+    home: "Home"
     farm: "My Farm"
     veggies: "Veggies"
     order: "Order"
