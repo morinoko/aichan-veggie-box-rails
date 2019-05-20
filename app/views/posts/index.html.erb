@@ -1,6 +1,8 @@
 <div class="container narrow">
-	<%= @posts.each do |post| %>
-		<h2><%= link_to post.title, post_path(post) %></h2>
-		<%= post.content %>
+	<% @posts.each do |post| %>
+		<div class="post">
+			<h2><%= link_to post.title, post_path(post) %></h2>
+			<%= post.content %>
+		</div>
 	<% end %>
 </div>
