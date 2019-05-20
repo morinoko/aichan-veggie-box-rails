@@ -51,8 +51,10 @@ ja:
   posts:
     new:
       title: "新しいブログ記事"
+      submit: "公開する"
     end:
       title: "ブルグ記事の編集"
+      submit: "保存する"
   sessions:
     login: "ログイン"
     logout: "ログアウト"
@@ -77,6 +79,9 @@ ja:
         title_ja: "日本語のタイトル"
         description_en: "英語のボックスの内容や説明"
         description_ja: "日本語のボックスの内容や説明"
+      post:
+        title: "タイトル"
+        content: "記事の内容"
     errors:
       models:
         order:
@@ -103,6 +108,10 @@ ja:
             description_en:
               blank: "は必須です。"
   helpers:
+    submit:
+      post:
+        create: "公開する"
+        update: "更新する"
     label:
       order:
         name: "お名前"

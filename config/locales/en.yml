@@ -81,8 +81,10 @@ en:
   posts:
     new:
       title: "New Blog Post"
+      submit: "Publish"
     end:
       title: "Edit Blog Post"
+      submit: "Save"
   sessions:
     login: "Login"
     logout: "Logout"
@@ -107,6 +109,9 @@ en:
         title_ja: "Title in Japanese"
         description_en: "Description in English"
         description_ja: "Description in Japanese"
+      post:
+        title: "Title"
+        content: "Content"
     errors:
       models:
         order:
@@ -134,6 +139,10 @@ en:
             description_en:
               blank: "cannot be blank"
   helpers:
+    submit:
+      post:
+        create: "Publish"
+        update: "Update"
     label:
       order:
         name: "Full Name"
