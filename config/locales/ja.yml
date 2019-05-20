@@ -59,7 +59,7 @@ ja:
       edit: "編集する"
       delete: "消す"
     edit:
-      title: "ブルグ記事の編集"
+      title: "ブログ記事の編集"
       submit: "保存する"
     delete:
       confirm: "本当に消しますか？"
