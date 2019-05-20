@@ -5,10 +5,46 @@
 	h1 {
 		text-align: center;
 	}
+
+	.post-meta {
+		font-size: 90%;
+		color: #616161;
+	}
+
+	.delete-link {
+		color: red;
+	}
+}
+
+.posts.index,
+.posts.show {
+	.container {
+		padding: 50px 0 100px;
+	}
+
+	.post-content {
+		margin-top: 2em;
+	}
 }
 
 .posts.index {
 	h2 {
 		text-align: left;
+		margin-bottom: 1rem;
+	}
+}
+
+.posts.show {
+	.post-meta {
+		text-align: center;
+	}
+
+	.author-links {
+		text-align: right;
+		margin-top: 2em;
+
+		.delete-link {
+			margin-left: 1em;
+		}
 	}
 }

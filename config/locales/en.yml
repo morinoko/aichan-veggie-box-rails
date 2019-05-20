@@ -80,12 +80,19 @@ en:
       submit: "Send"
       error_title: "Your order form has some errors. Please fix the errors below and resend the form."
   posts:
+    index:
+      no_posts: "There are no posts yet. Please check again later."
     new:
       title: "New Blog Post"
       submit: "Publish"
-    end:
+    show:
+      edit: "Edit"
+      delete: "Delete"
+    edit:
       title: "Edit Blog Post"
       submit: "Save"
+    delete:
+      confirm: "Are you sure?"
   sessions:
     login: "Login"
     logout: "Logout"
@@ -159,3 +166,11 @@ en:
     order:
       success: "Thank you for your order! I will send you an email about your veggie box soon!"
       error_html: "Your order form had some errors. Please <a href=\"/#order\" class=\"order-link\">check the form</a> and resubmit"
+  time:
+    am: am
+    formats:
+      default: "%a, %d %b %Y %I:%M:%S %p %Z"
+      long: "%B %d, %Y %I:%M %p"
+      short: "%d %b %I:%M %p"
+      no_time: "%B %d, %Y"
+    pm: pm
