@@ -2,8 +2,6 @@
 
 one:
   title: "This season's veggies"
-  content: rich_texts(:one)
 
 two:
   title: MyString
-  content: MyText
