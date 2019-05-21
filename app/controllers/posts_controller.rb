@@ -1,9 +1,11 @@
 class PostsController < ApplicationController
+	include Pagy::Backend
+
 	before_action :require_login, except: %w{index show}
 	before_action :set_post, only: %w{show edit update destroy}
 
 	def index
-		@posts = Post.all
+		@pagy, @posts = pagy(Post.all, items: 5)
 	end
 
 	def show
