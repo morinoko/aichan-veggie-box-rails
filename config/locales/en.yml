@@ -38,6 +38,7 @@ en:
     veggies: "Veggies"
     order: "Order"
     blog: "Blog"
+    new_blog: "New Post"
     language: "日本語"
     menu: "Menu"
     menu_close: "Close"
@@ -82,6 +83,7 @@ en:
   posts:
     index:
       no_posts: "There are no posts yet. Please check again later."
+      more: "Read more"
     new:
       title: "New Blog Post"
       submit: "Publish"

@@ -1,12 +1,16 @@
 <div class="container narrow">
-	<h1><%= @post.title %></h1>
-	<div class="post-meta"><%= l(@post.created_at, format: :no_time) %></div>
-	<div class="post-content"><%= @post.content %></div>
-	<% if logged_in? %>
-		<div class="author-links">
-			<%= link_to t('posts.show.edit'), edit_post_path(@post) %>
-			<%= link_to t('posts.show.delete'), post_path(@post), class: 'delete-link', method: :delete,
-																														data: { confirm: t('posts.delete.confirm') } %>
-		</div>
-	<% end %>
+	<article class="post">
+		<header class="post-header">
+			<h1><%= @post.title %></h1>
+			<div class="post-meta"><%= l(@post.created_at, format: :no_time) %></div>
+		</header>
+		<div class="post-content"><%= @post.content %></div>
+		<% if logged_in? %>
+			<div class="author-links">
+				<%= link_to t('posts.show.edit'), edit_post_path(@post) %>
+				<%= link_to t('posts.show.delete'), post_path(@post), class: 'delete-link', method: :delete,
+																															data: { confirm: t('posts.delete.confirm') } %>
+			</div>
+		<% end %>
+	</article>
 </div>

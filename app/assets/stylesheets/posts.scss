@@ -36,21 +36,54 @@
 	h2 {
 		text-align: left;
 		margin-bottom: 1rem;
+
+		a {
+			color: #548719;
+			text-decoration: none;
+
+			&:hover {
+				color: #7EA75C;
+				text-decoration: underline;
+			}
+		}
 	}
+
+	.post-content {
+		line-height: 1.7;
+
+		.more {
+			display: block;
+			margin-top: 1em;
+		}
+	}
+	
 }
 
 .posts.show {
-	.post-meta {
-		text-align: center;
+	.post {
+		header {
+			h1 {
+				padding: 0;
+				margin-bottom: 1rem;
+			}
+
+			.post-meta {
+				text-align: center;
+			}
+		}
+
+		.author-links {
+			text-align: right;
+			margin-top: 2em;
+
+			.delete-link {
+				margin-left: 1em;
+			}
+		}
 	}
 
-	.author-links {
-		text-align: right;
-		margin-top: 2em;
-
-		.delete-link {
-			margin-left: 1em;
-		}
+	.trix-content {
+			line-height: 1.7;
 	}
 }
 

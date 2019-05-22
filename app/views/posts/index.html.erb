@@ -1,11 +1,14 @@
 <div class="container narrow">
 	<% if @posts.size > 0 %>
 		<% @posts.each do |post| %>
-			<div class="post">
+			<article class="post">
 				<h2><%= link_to post.title, post_path(post) %></h2>
 				<div class="post-meta"><%= l(post.created_at, format: :no_time) %></div>
-				<div class="post-content"><%= post.content %></div>
-			</div>
+				<div class="post-content">
+					<p><%= post.content.to_plain_text.truncate(150) %></p>
+					<%= link_to t('posts.index.more'), post_path(post), class: "more" %>		
+				</div>
+			</article>
 		<% end %>
 	<% else %>
 		<p><%= t('posts.no_posts') %></p>

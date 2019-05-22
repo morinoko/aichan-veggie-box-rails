@@ -7,6 +7,7 @@ ja:
     veggies: "野菜"
     order: "注文したい！"
     blog: "ブログ"
+    new_blog: "ブログを書く"
     language: "English"
     menu: "メニュー"
     menu_close: "閉じる"
@@ -52,6 +53,7 @@ ja:
   posts:
     index:
       no_posts: "まだブログ記事がありません。"
+      more: "もっと読む"
     new:
       title: "新しいブログ記事"
       submit: "公開する"
