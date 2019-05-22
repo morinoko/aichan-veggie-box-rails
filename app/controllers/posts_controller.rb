@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
 	include Pagy::Backend
 
+	before_action :set_pagy_locale
 	before_action :require_login, except: %w{index show}
 	before_action :set_post, only: %w{show edit update destroy}
 
@@ -51,5 +52,9 @@ class PostsController < ApplicationController
 
 	def set_post
 		@post = Post.find_by(id: params[:id])
+	end
+
+	def set_pagy_locale
+		@pagy_locale = params[:locale] || I81n.default_locale
 	end
 end

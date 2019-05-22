@@ -11,5 +11,5 @@
 		<p><%= t('posts.no_posts') %></p>
 	<% end %>
 
-	<%== pagy_nav(@pagy) %>
+	<%== pagy_nav(@pagy) if @pagy.pages > 1 %>
 </div>
