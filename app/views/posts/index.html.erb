@@ -11,7 +11,7 @@
 			</article>
 		<% end %>
 	<% else %>
-		<p><%= t('posts.no_posts') %></p>
+		<p><%= t('posts.index.no_posts') %></p>
 	<% end %>
 
 	<%== pagy_nav(@pagy) if @pagy.pages > 1 %>
