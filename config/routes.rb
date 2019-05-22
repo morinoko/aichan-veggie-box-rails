@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   	resources :orders, only: %w{create}
   	get 'orders', action: :index, controller: :home
     resources :veggie_boxes, only: %w{edit update new create}
+    resources :posts
 
   	# Login/Logout
   	get '/login', to: 'sessions#new'

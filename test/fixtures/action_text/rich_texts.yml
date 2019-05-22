@@ -1,0 +1,4 @@
+one:
+  record: post_one (Post)
+  name: content
+  body: <p>In a <i>million</i> stars!</p>

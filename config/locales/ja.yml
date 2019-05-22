@@ -2,10 +2,12 @@ ja:
   site_title: "あいちゃんのVeggie Box"
   copyright: "© あいちゃんのVeggie Box 2019"
   menu:
+    home: "トップ"
     farm: "畑のこと"
     veggies: "野菜"
     order: "注文したい！"
     blog: "ブログ"
+    new_blog: "ブログを書く"
     language: "English"
     menu: "メニュー"
     menu_close: "閉じる"
@@ -48,6 +50,21 @@ ja:
       title: "注文フォーム"
       submit: "メッセージを送る"
       error_title: "あれ？！注文フォームに間違いがあります！間違えたところを正しく入力し直してください。"
+  posts:
+    index:
+      no_posts: "まだブログ記事がありません。"
+      more: "もっと読む"
+    new:
+      title: "新しいブログ記事"
+      submit: "公開する"
+    show:
+      edit: "編集する"
+      delete: "消す"
+    edit:
+      title: "ブログ記事の編集"
+      submit: "保存する"
+    delete:
+      confirm: "本当に消しますか？"
   sessions:
     login: "ログイン"
     logout: "ログアウト"
@@ -72,7 +89,17 @@ ja:
         title_ja: "日本語のタイトル"
         description_en: "英語のボックスの内容や説明"
         description_ja: "日本語のボックスの内容や説明"
+      post:
+        title: "タイトル"
+        content: "記事の内容"
     errors:
+      format: "%{attribute}%{message}"
+      messages:
+        blank: を入力してください
+        empty: を入力してください
+        invalid: は不正な値です
+        required: を入力してください
+        taken: はすでに存在します
       models:
         order:
           attributes:
@@ -98,6 +125,10 @@ ja:
             description_en:
               blank: "は必須です。"
   helpers:
+    submit:
+      post:
+        create: "公開する"
+        update: "更新する"
     label:
       order:
         name: "お名前"
@@ -113,3 +144,64 @@ ja:
     order:
       success: "ご注文ありがとうございました！後ほどベジボックスについてメールを送りますので、少々お待ちください。"
       error_html: "注文フォームに間違いがありました。<a href=\"/#order\" class=\"order-link\">フォームを確認し</a>、もう一度送ってください。"
+  time:
+    am: 午前
+    formats:
+      default: "%Y年%m月%d日(%a) %H時%M分%S秒 %z"
+      long: "%Y年%m月%d日 %H:%M"
+      short: "%m月%d日 %H:%M"
+      no_time: "%Y年%m月%d日"
+    pm: 午後
+  date:
+    abbr_day_names:
+    - 日
+    - 月
+    - 火
+    - 水
+    - 木
+    - 金
+    - 土
+    abbr_month_names:
+    - 
+    - 1月
+    - 2月
+    - 3月
+    - 4月
+    - 5月
+    - 6月
+    - 7月
+    - 8月
+    - 9月
+    - 10月
+    - 11月
+    - 12月
+    day_names:
+    - 日曜日
+    - 月曜日
+    - 火曜日
+    - 水曜日
+    - 木曜日
+    - 金曜日
+    - 土曜日
+    formats:
+      default: "%Y/%m/%d"
+      long: "%Y年%m月%d日(%a)"
+      short: "%m/%d"
+    month_names:
+    - 
+    - 1月
+    - 2月
+    - 3月
+    - 4月
+    - 5月
+    - 6月
+    - 7月
+    - 8月
+    - 9月
+    - 10月
+    - 11月
+    - 12月
+    order:
+    - :year
+    - :month
+    - :day

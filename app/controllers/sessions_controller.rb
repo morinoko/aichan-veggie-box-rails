@@ -7,12 +7,12 @@ class SessionsController < ApplicationController
   	user = User.find_by(email: params[:session][:email].downcase)
 
   	if user && user.authenticate(params[:session][:password])
+      log_in(user)
   		flash[:success] = t('sessions.success')
-  		log_in(user)
   		redirect_to root_path
   	else
   		flash.now[:error] = t('sessions.error')
-  		render :new
+  		render :new, layout: "admin"
   	end
   end
 

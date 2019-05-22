@@ -1,0 +1,13 @@
+<div id="post-form" class="container">
+	<%= form_for @post do |f| %>
+		<div class="form-group">
+				<%= f.label :title %>
+				<%= f.text_field :title %>
+		</div>
+		<div class="form-group">
+				<%= f.label :content %>
+				<%= f.rich_text_area :content %>
+		</div>
+		<%= f.submit id: "submit" %>
+	<% end %>
+</div>

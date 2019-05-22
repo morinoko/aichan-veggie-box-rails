@@ -1,0 +1,97 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.posts {
+	h1 {
+		text-align: center;
+	}
+
+	.post-meta {
+		font-size: 90%;
+		color: #616161;
+	}
+
+	.delete-link {
+		color: red;
+	}
+
+	.pagy-nav {
+		text-align: center;
+		margin-top: 3em;
+	}
+}
+
+.posts.index,
+.posts.show {
+	.container {
+		padding: 50px 0 100px;
+	}
+
+	.post-content {
+		margin-top: 2em;
+	}
+}
+
+.posts.index {
+	h2 {
+		text-align: left;
+		margin-bottom: 1rem;
+
+		a {
+			color: #548719;
+			text-decoration: none;
+
+			&:hover {
+				color: #7EA75C;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.post-content {
+		line-height: 1.7;
+
+		.more {
+			display: block;
+			margin-top: 1em;
+		}
+	}
+	
+}
+
+.posts.show {
+	.post {
+		header {
+			h1 {
+				padding: 0;
+				margin-bottom: 1rem;
+			}
+
+			.post-meta {
+				text-align: center;
+			}
+		}
+
+		.author-links {
+			text-align: right;
+			margin-top: 2em;
+
+			.delete-link {
+				margin-left: 1em;
+			}
+		}
+	}
+
+	.trix-content {
+			line-height: 1.7;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.posts.index,
+	.posts.show {
+		.container {
+			padding: 50px 15px 100px;
+		}
+	}
+}
