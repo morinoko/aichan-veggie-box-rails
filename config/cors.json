@@ -1,0 +1,8 @@
+[
+  {
+    "origin": ["https://aichannoveggiebox.com", "http://localhost:3000"],
+    "responseHeader": ["Content-Type", "Content-Md5"],
+    "method": ["PUT", "GET", "HEAD", "DELETE"],
+    "maxAgeSeconds": 3600
+  }
+]
