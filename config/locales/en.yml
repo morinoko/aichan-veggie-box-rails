@@ -95,6 +95,8 @@ en:
       submit: "Save"
     delete:
       confirm: "Are you sure?"
+    form:
+      error_title: "There was a problem with your article!"
   sessions:
     login: "Login"
     logout: "Logout"

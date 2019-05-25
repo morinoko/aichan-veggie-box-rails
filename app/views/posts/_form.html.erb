@@ -1,13 +1,17 @@
 <div id="post-form" class="container">
 	<%= form_for @post do |f| %>
+		<%= render partial: 'shared/error_messages', locals: { current_object: @post } %>
+
 		<div class="form-group">
 				<%= f.label :title %>
 				<%= f.text_field :title %>
 		</div>
 		<div class="form-group">
 				<%= f.label :content %>
+				<%= attribute_errors(@post, :content) %>
 				<%= f.rich_text_area :content %>
 		</div>
+
 		<%= f.submit id: "submit" %>
 	<% end %>
 </div>

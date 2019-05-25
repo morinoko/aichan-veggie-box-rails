@@ -65,6 +65,8 @@ ja:
       submit: "保存する"
     delete:
       confirm: "本当に消しますか？"
+    form:
+      error_title: "記事に間違いがあります！"
   sessions:
     login: "ログイン"
     logout: "ログアウト"
