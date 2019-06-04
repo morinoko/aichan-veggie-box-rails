@@ -146,6 +146,9 @@ ja:
     order:
       success: "ご注文ありがとうございました！後ほどベジボックスについてメールを送りますので、少々お待ちください。"
       error_html: "注文フォームに間違いがありました。<a href=\"/#order\" class=\"order-link\">フォームを確認し</a>、もう一度送ってください。"
+  recaptcha:
+    errors:
+      verification_failed: "reCAPTCHA 認証失敗しました。しばらくしてからもう一度お試しください。"
   time:
     am: 午前
     formats:

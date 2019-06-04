@@ -170,6 +170,9 @@ en:
     order:
       success: "Thank you for your order! I will send you an email about your veggie box soon!"
       error_html: "Your order form had some errors. Please <a href=\"/#order\" class=\"order-link\">check the form</a> and resubmit"
+  recaptcha:
+    errors:
+      verification_failed: "reCAPTCHA Authorization Failed. Please try again later."
   time:
     am: am
     formats:
