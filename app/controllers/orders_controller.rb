@@ -4,6 +4,11 @@ class OrdersController < ApplicationController
 	def create
 		@order = Order.new(order_params)
 
+		unless verify_recaptcha?(params[:recaptcha_token], 'order')
+			flash.now[:error] = t('recaptcha.errors.verification_failed')
+			return render 'home/index'
+		end
+
 		if @order.save
 			OrderMailer.with(order: @order).new_order_email.deliver_later
 

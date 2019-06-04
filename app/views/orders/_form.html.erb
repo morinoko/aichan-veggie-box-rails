@@ -1,3 +1,7 @@
+<%= content_for :recaptcha_js do %>
+  <%= include_recaptcha_js %>
+<% end %>
+
 <%= form_for @order do |f| %>
 	<%= render partial: 'shared/error_messages', locals: { current_object: @order } %>
 	
@@ -22,4 +26,5 @@
 			<%= f.text_area :message, rows: 10, placeholder: true %>
 	</div>
 	<%= f.submit t('orders.form.submit'), id: "submit" %>
+	<%= recaptcha_execute('order') %>
 <% end %>
