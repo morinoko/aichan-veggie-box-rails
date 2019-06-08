@@ -94,3 +94,9 @@ form {
     margin: 0 0 .5em;
   }
 }
+
+@media screen and (max-width: 649px) {
+  input[type="submit"] {
+    width: 100%;
+  }
+}
