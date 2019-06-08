@@ -11,6 +11,10 @@
   box-sizing:         border-box;
 }
 
+@-ms-viewport{
+  width: device-width;
+}
+
 /* colors */
 $base-text-color: #212529;
 $dark-green: #548719;
