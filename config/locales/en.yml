@@ -83,7 +83,6 @@ en:
   posts:
     index:
       no_posts: "There are no posts yet. Please check again later."
-      more: "Read more"
     new:
       title: "New Blog Post"
       submit: "Publish"

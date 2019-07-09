@@ -5,8 +5,7 @@
 				<h2><%= link_to post.title, post_path(post) %></h2>
 				<div class="post-meta"><%= l(post.created_at, format: :no_time) %></div>
 				<div class="post-content">
-					<p><%= post.content %></p>
-					<%= link_to t('posts.index.more'), post_path(post), class: "more" %>		
+					<p><%= post.content %></p>		
 				</div>
 			</article>
 		<% end %>
