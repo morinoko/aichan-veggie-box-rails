@@ -1,0 +1,9 @@
+<section id="orders">
+	<div class="container">
+		<ul>
+		<% @orders.each do |order| %>
+			<li><%= order.name %></li>
+		<% end %>
+		</ul>
+	</div>
+</section>

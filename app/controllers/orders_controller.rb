@@ -1,5 +1,11 @@
 class OrdersController < ApplicationController
 	# Form for new order is located on the home page, so there is no `new` action
+	before_action :require_login, only: %w{index}
+
+	def index
+		@orders = Order.all
+		render layout: "admin"
+	end
 
 	def create
 		@order = Order.new(order_params)

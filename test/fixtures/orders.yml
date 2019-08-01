@@ -1,15 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+order_1:
   name: "Joe Smith"
   email: "joe@gmail.com"
   address: "1-2-3 Chuo, Tokyo, 333-0000"
   phone: "090-7777-8888"
   message: "I want to place an order!"
 
-two:
-  name: MyString
-  email: MyString
-  address: MyString
-  phone: MyString
-  message: MyText
+order_2:
+  name: "Veggie Lover"
+  email: "iloveveggies@example.com"
+  address: "3333 Chuo, Osaka, 999-0000"
+  phone: "555-5555-4531"
+  message: "Please send me a box for this weekend!"
