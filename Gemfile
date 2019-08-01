@@ -24,6 +24,8 @@ gem 'bcrypt', '~> 3.1.7'
 # Google Cloud Storage
 gem "google-cloud-storage", "~> 1.11", require: false
 
+gem "mini_magick", ">= 4.9.4"
+
 # Use Active Storage variant
 gem 'image_processing', '~> 1.2'
 
