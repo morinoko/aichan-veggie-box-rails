@@ -1,9 +1,17 @@
 <section id="orders">
-	<div class="container">
-		<ul>
+	<div class="container narrow">
+		<h1>注文の一覧</h1>
+		<div class="orders">
 		<% @orders.each do |order| %>
-			<li><%= order.name %></li>
+			<div class="orders__item">
+				<p class="orders__item__name"><%= order.name %></p>
+				<p class="orders_item_date"><%= l(order.created_at, format: :no_time) %></p>
+				<p class="orders__item__email"><%= order.email %></p>
+				<p class="orders__item__phone"><%= order.phone %></p>
+				<p class="orders__item__address"><%= order.address %></p>
+				<p class="orders__item__message"><%= order.message %></p>
+			</div>
 		<% end %>
-		</ul>
+		</div>
 	</div>
 </section>

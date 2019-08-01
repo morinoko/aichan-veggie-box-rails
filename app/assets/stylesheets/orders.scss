@@ -54,6 +54,29 @@
 	}
 }
 
+.orders.index {
+	h1 {
+		text-align: center;
+		margin-bottom: 2em;
+	}
+
+	.orders {
+		padding-bottom: 50px;
+		
+		&__item {
+			margin-bottom: 2em;
+
+			p {
+				margin: 0 0 .5em;
+			}
+
+			&__name {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
 /* Responsive */
 @media screen and (max-width: 650px) {
 	#order-flow {
