@@ -6,6 +6,7 @@ ja:
     farm: "畑のこと"
     veggies: "野菜"
     order: "注文したい！"
+    order_list: "注文の一覧"
     blog: "ブログ"
     new_blog: "ブログを書く"
     language: "English"
@@ -50,6 +51,9 @@ ja:
       title: "注文フォーム"
       submit: "メッセージを送る"
       error_title: "あれ？！注文フォームに間違いがあります！間違えたところを正しく入力し直してください。"
+    index:
+      title: "注文の一覧"
+      no_orders: "注文はありません。"
   posts:
     index:
       no_posts: "まだブログ記事がありません。"

@@ -37,6 +37,7 @@ en:
     farm: "My Farm"
     veggies: "Veggies"
     order: "Order"
+    order_list: "All Orders"
     blog: "Blog"
     new_blog: "New Post"
     language: "日本語"
@@ -80,6 +81,9 @@ en:
       title: "Order Form"
       submit: "Send"
       error_title: "Your order form has some errors. Please fix the errors below and resend the form."
+    index:
+      title: "List of Orders"
+      no_orders: "There are no orders at this time."
   posts:
     index:
       no_posts: "There are no posts yet. Please check again later."
