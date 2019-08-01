@@ -74,8 +74,8 @@ Rails.application.configure do
     :address              => "smtp.gmail.com",
     :port                 => 587,
     :user_name            => Rails.application.credentials.admin_email,
-    :password             => Rails.application.credentials.admin_email_password,
-    :authentication       => "login",
+    :password             => Rails.application.credentials.admin_email_app_password,
+    :authentication       => 'plain',
     :domain               => 'aichannoveggiebox.com',
     :enable_starttls_auto => true
   }
