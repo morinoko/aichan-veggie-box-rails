@@ -2,7 +2,7 @@ require 'test_helper'
 
 class OrderMailerTest < ActionMailer::TestCase
   test "new order email" do
-    order = orders(:one)
+    order = orders(:order_1)
 
 		email = OrderMailer.with(order: order).new_order_email
 

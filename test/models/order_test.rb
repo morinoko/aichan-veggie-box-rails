@@ -3,7 +3,7 @@ require 'test_helper'
 class OrderTest < ActiveSupport::TestCase
 
 	def setup
-    @order = orders(:one)
+    @order = orders(:order_1)
   end
 
   test "should be valid" do
