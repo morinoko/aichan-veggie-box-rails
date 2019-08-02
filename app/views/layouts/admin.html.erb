@@ -9,7 +9,15 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="admin <%= controller_name %> <%= action_name %>">    
+  <body class="admin <%= controller_name %> <%= action_name %>">
+    <header class="header">
+      <nav class="header__nav container">
+        <%= link_to t('menu.home'), root_path %>
+        <%= link_to t('menu.new_blog'), new_post_path %>
+        <%= link_to t('menu.order_list'), orders_path %>
+      </nav>
+    </header>
+      
     <% flash.each do |message_type, message| %>
       <div class="container">
         <div class="alert alert-<%= message_type %>"><%= message.html_safe %></div>
