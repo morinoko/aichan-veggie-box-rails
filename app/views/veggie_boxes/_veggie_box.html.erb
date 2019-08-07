@@ -5,8 +5,8 @@
 		</div>
 	<% end %>
 	<div class="description">
-		<h3><%= @veggie_box.localized_title %></h3>
-		<p><%= @veggie_box.localized_description %></p>
+		<h3><%= @veggie_box.title %></h3>
+		<p><%= @veggie_box.description %></p>
 		<%= link_to t('veggie_boxes.edit'), edit_veggie_box_path(@veggie_box) if logged_in? %>
 	</div>
 <% else %>
