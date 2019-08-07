@@ -6,14 +6,23 @@ class VeggieBox < ApplicationRecord
 	validate :only_one
 	has_one_attached :photo
 
-	# Allows for dynamically determined localized title and description based on locale
+	# Defining :method_missing and :respond_to_missing? allows for
+	# dynamically determined localized attributed named based
+	# on locale so you can use :title, :description, etc.
+	# in views instead of :title_en, :description_ja, etc
 	def method_missing(method, *args)
-		if method == "description" || "title"
-			localized_method = "#{method}_#{I18n.locale}"
+		localized_method = "#{method}_#{I18n.locale}"
+
+		if self.respond_to?(localized_method)
 			self.send(localized_method)
 		else
 			super
 		end
+	end
+
+	def respond_to_missing?(method, *)
+		localized_method = "#{method}_#{I18n.locale}"
+		self.attribute_names.include?(localized_method) || super
 	end
 
 	def thumbnail
