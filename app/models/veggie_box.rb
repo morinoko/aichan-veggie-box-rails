@@ -11,9 +11,8 @@ class VeggieBox < ApplicationRecord
 	# on locale so you can use :title, :description, etc.
 	# in views instead of :title_en, :description_ja, etc
 	def method_missing(method, *args)
-		localized_method = "#{method}_#{I18n.locale}"
-
-		if self.respond_to?(localized_method)
+		if self.respond_to?(method)
+			localized_method = "#{method}_#{I18n.locale}"
 			self.send(localized_method)
 		else
 			super
