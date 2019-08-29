@@ -4,7 +4,7 @@
 	  	<li><%= link_to t('menu.home'), root_path %></li>
 	    <li><%= link_to t('menu.farm'), root_path(anchor: 'about'), id: "about-link" %></li>
 	    <li><%= link_to t('menu.veggies'), root_path(anchor: 'veggies'), id: "veggies-link" %></li>
-	    <li><%= link_to t('menu.order'), root_path(anchor: 'order'), class: "order-link" %></li>
+	    <li><%= link_to t('menu.order'), root_path(anchor: 'order'), id: "order-link" %></li>
 	    <li><%= link_to t('menu.blog'), posts_path %></li>
 	    <li><%= link_to t('menu.language'), root_path(locale: other_locale) %></li>
 	    <% if logged_in? %>
