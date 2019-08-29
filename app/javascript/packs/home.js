@@ -33,7 +33,7 @@ $(function() {
     }, 500);
 	});
 
-	const orderLink = $(".order-link");
+	const orderLink = $("#order-link");
 	orderLink.click(function(e) {
 		e.preventDefault();
 		$([document.documentElement, document.body]).animate({
