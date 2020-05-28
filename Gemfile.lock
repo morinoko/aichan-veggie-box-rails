@@ -62,7 +62,7 @@ GEM
       io-like (~> 0.3.0)
     bcrypt (3.1.13)
     bindex (0.8.1)
-    bootsnap (1.4.4)
+    bootsnap (1.4.6)
       msgpack (~> 1.0)
     builder (3.2.4)
     byebug (11.0.1)
@@ -144,7 +144,7 @@ GEM
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.14.1)
-    msgpack (1.3.1)
+    msgpack (1.3.3)
     multi_json (1.13.1)
     multipart-post (2.1.1)
     nio4r (2.5.2)
@@ -291,7 +291,7 @@ DEPENDENCIES
   webpacker (>= 4.0.0.rc.3)
 
 RUBY VERSION
-   ruby 2.6.0p0
+   ruby 2.7.1p83
 
 BUNDLED WITH
-   1.17.2
+   2.1.4
