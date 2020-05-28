@@ -11,3 +11,5 @@ require("jquery")
 
 require("trix")
 require("@rails/actiontext")
+
+require("packs/shared")
