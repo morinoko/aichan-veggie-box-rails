@@ -163,6 +163,15 @@ footer {
   border-color: $sucess-border;
 }
 
+/* Utility */
+.hidden {
+	display: none;
+}
+
+.open {
+	display: block;
+}
+
 /* miscellaneous */
 
 .debug_dump {
@@ -174,7 +183,6 @@ footer {
 	header {
 		nav {
 			#menu {
-				display: none;
 				text-align: center;
 
 				li {
@@ -190,9 +198,12 @@ footer {
 
 			#menu-button {
 				color: white;
-				display: block;
     		text-align: right;
     		padding-right: 1em;
+
+    		&.active {
+    			display: block;
+    		}
 			}
 		}
 	}

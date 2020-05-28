@@ -1,17 +1,27 @@
 function toggleMenu(e) {
 	e.preventDefault();
 
-	const menuButton = $("#menu-button");
-	const menu = $("#menu");
+	const menuButton = document.querySelector("#menu-button");
+	const menu = document.querySelector("#menu");
 
-	menuButton.toggle();
-	menu.toggle();
+	if (menu.classList.contains('hidden')) {
+		menu.classList.remove('hidden');
+		menu.classList.add('open');
+		menuButton.classList.add('hidden');
+		menuButton.classList.remove('active');
+	} else {
+		menu.classList.remove('open');
+		menu.classList.add('hidden');
+		menuButton.classList.remove('hidden');
+		menuButton.classList.add('active');
+	}
+
 }
 
 document.addEventListener("turbolinks:load", function() {
-	const menuButton = $("#menu-button");
-	const closeButton = $("#menu-close");
+	const menuButton = document.querySelector("#menu-button");
+	const closeButton = document.querySelector("#menu-close");
 
-	menuButton.click(toggleMenu);
-	closeButton.click(toggleMenu);
+	menuButton.addEventListener('click', toggleMenu);
+	closeButton.addEventListener('click', toggleMenu);
 })

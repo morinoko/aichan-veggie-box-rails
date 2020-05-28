@@ -1,6 +1,6 @@
 <header>
 	<nav>
-	  <ul id="menu">
+	  <ul id="menu" class='hidden'>
 	  	<li><%= link_to t('menu.home'), root_path %></li>
 	    <li><%= link_to t('menu.farm'), root_path(anchor: 'about'), id: "about-link" %></li>
 	    <li><%= link_to t('menu.veggies'), root_path(anchor: 'veggies'), id: "veggies-link" %></li>
@@ -12,7 +12,7 @@
 	    <% end %>
 	    <li id="menu-close"><%= link_to t('menu.menu_close'), "#" %></li>
 	  </ul>
-	  <%= link_to t('menu.menu'), "#", id: "menu-button" %>
+	  <%= link_to t('menu.menu'), "#", id: "menu-button", class: "active" %>
 	</nav>
 	<%= image_tag 'kuwa-logo.png', id: "logo" %>
 	<h1><%= t('site_title') %></h1>
