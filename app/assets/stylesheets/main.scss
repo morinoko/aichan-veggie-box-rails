@@ -30,6 +30,10 @@ $error-border: #f5c6cb;
     @include box_sizing;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 1rem;
