@@ -8,7 +8,7 @@
     "@rails/ujs": "^6.0.0-alpha",
     "@rails/webpacker": "^4.0.2",
     "kind-of": "^6.0.3",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.21",
     "lodash.template": "^4.5.0",
     "minimist": "^1.2.3",
     "serialize-javascript": "^2.1.1",
